@@ -57,11 +57,11 @@ INSERT INTO `tbl_admin` (`adminId`, `tutionId`, `fname`, `lname`, `address`, `em
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_attendence`
+-- Table structure for table `table_attendence`
 --
 
-DROP TABLE IF EXISTS `tbl_attendence`;
-CREATE TABLE IF NOT EXISTS `tbl_attendence` (
+DROP TABLE IF EXISTS `table_attendence`;
+CREATE TABLE IF NOT EXISTS `table_attendence` (
   `attendenceId` int(11) NOT NULL AUTO_INCREMENT,
   `tutionId` varchar(20) NOT NULL,
   `date` date NOT NULL,
@@ -74,10 +74,10 @@ CREATE TABLE IF NOT EXISTS `tbl_attendence` (
 ) ENGINE=InnoDB AUTO_INCREMENT=136 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tbl_attendence`
+-- Dumping data for table `table_attendence`
 --
 
-INSERT INTO `tbl_attendence` (`attendenceId`, `tutionId`, `date`, `Id`, `attendence`, `type`) VALUES
+INSERT INTO `table_attendence` (`attendenceId`, `tutionId`, `date`, `Id`, `attendence`, `type`) VALUES
 (2, 'T0000001', '2019-03-31', 'T0000001#1#2', 1, 'student'),
 (3, 'T0000001', '2019-03-31', 'T0000001#2#1', 1, 'student'),
 (5, 'T0000001', '2019-03-31', 'T0000001#3#1', 1, 'student'),
